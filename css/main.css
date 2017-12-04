@@ -107,3 +107,40 @@ Imagen del teléfono
 .img-phone {
 	padding-top: 10%;
 }
+
+/*
+Imagen de conductor
+*/
+.driver {
+	background-image: url(../assets/images/conduce.jpg);
+	background-size: cover;
+	background-position: 100% 93%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 51em;
+}
+
+/*
+Texto dentro de la imagen del conductor
+*/
+.drive{
+	padding-top: 80%;
+	color: #fff;
+}
+
+.drive-text {
+	color: #fff;
+	font-size: 17px;
+}
+/*
+Div transparente
+*/
+.background-clear {
+	background-color: rgba(0,0,0, 0.5);
+	height: 50em;
+}
+
+/*
+Fondo de la sección del mapa
+*/
+
