@@ -1,1 +1,45 @@
-/* Los estilos de tu proyecto */
+
+/*
+Estilos genéricos
+*/
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+/*
+Imagen del taxi de fondo
+*/
+.taxi {
+	background-image: url(../assets/images/taxi.jpg);
+	background-size: cover;
+	background-position: 100% 93%;
+	background-repeat: no-repeat;
+	height: 51em;
+}
+
+/*
+Sección amarilla
+*/
+.yellow {
+	background-color: #f7b617;
+	margin-top: 20%;
+	color: #fff;
+	height: 20em;
+}
+
+/*
+Estilos de los p dentro de la sección
+amarilla
+*/
+.yellow-p {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 0% 5%;
+}
+
+/*
+Texto ubicado entre las líneas
+*/
+.yellow-text{
+
+}
