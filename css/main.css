@@ -38,8 +38,72 @@ amarilla
 }
 
 /*
-Texto ubicado entre las líneas
+Texto ubicado antes del logo
 */
 .yellow-text{
+	padding: 0% 5%;
+	font-size: 1.5em;
+}
 
+/*
+Texto "O bien"
+*/
+.white-text {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/*
+Botón regístrate
+*/
+.botoncito {
+	margin: 0% 5%;
+}
+
+/*
+Botón conductor
+*/
+.boton-grande {
+	margin: 0% 5%;
+}
+
+/*
+Contenedor de la sección app
+*/
+.phone {
+	background-color: #f7b617;
+	height: 43em;
+}
+
+/*
+Contenedor de la imagen del smartphone
+y del texto
+*/
+.phone-container {
+	border: 1px solid #fff;
+	margin-top: 6%;
+}
+
+/*
+h2 de la sección app
+*/
+.app {
+	color: #fff;
+	padding-top: 15%;
+}
+
+/*
+Texto dentro de la descarga de app
+*/
+.app-text {
+	padding: 1%;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+/*
+Imagen del teléfono
+*/
+.img-phone {
+	padding-top: 10%;
 }
