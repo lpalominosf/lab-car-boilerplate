@@ -2,68 +2,87 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>lab-car</title>
+	<title>LabCar</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- Icono de la pestaña -->
+	<link rel="shortcut icon" href="assets/images/1557c931157ce26.jpg" type="image/png">
+	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Mis estilos -->
 	<link rel="stylesheet" href="css/main.css">
+	<!-- Fuente -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- Iconos -->
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<!-- Viaja/Conduce/Inicia sesión -->
 	<!-- Navbar -->
 	<div class="container-fluid">
 		<header>
-			<nav class="navbar navbar-default navbar-fixed-top" style="height: 80px;">
+			<nav class="navbar navbar-default navbar-fixed-top" style="height: 100px;">
 				<div class="container">
 					<div class="navbar-header navbar-left">
 						<button type="button" class="navbar-toggle collapsed left" data-toggle="collapse" data-target="#navbar-1">
-							<!-- Menú hamburguesa -->
 							<span class="sr-only">Menu</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a href="#" class="navbar-brand"><img src="assets/images/logoForma.png" alt="logo"></a>
-				</div>
-				<div class="collapse navbar-collapse " id="navbar-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="#">Viaja</a>
-						</li>
-						<li>
-							<a href="#">Conduce</a>
-						</li>
-						<li>
-							<a href="#">Inicia sesión</a>
-						</li>
-					</ul>
+						<a href="#" class="navbar-brand">
+							<img src="assets/images/logoForma.png" alt="logo">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#">Viaja</a>
+							</li>
+							<li>
+								<a href="#">Conduce</a>
+							</li>
+							<li>
+								<a href="#">Inicia sesión</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 		</header>
 	</div>
-	<!-- Primera sección, contenedora de la imagen del taxi-->
-	<section class="taxi">
+	<!-- Primera sección -->
+	<section class="taxi img-responsive">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="yellow col-xs-offset-4 col-xs-8 col-sm-offset-6 col-sm-6 col-md-offset-7 col-md-5">
-					<p class="yellow-p">Disfruta del viaje</p>
-					<p class="yellow-p">Eres dueño de tu tiempo</p>
-					<p class="yellow-text">Viaja con <span><img src="assets/images/logoBlanco.png" alt="logo-blanco" class="white-logo"></span></p>
-					<button type="button" class="btn btn-default botoncito">REGÍSTRATE</button>
-					<div class="row">
-						<div class="col-sm-12 col-md-12">
-							<div class="col-xs-4 col-md-4 white-line">
+				<div class="container">
+					<div class="yellow col-xs-offset-4 col-xs-8 col-sm-offset-6 col-sm-6 col-md-offset-7 col-md-5">
+						<p class="yellow-p">Disfruta del viaje</p>
+						<p class="yellow-p">Eres dueño de tu tiempo</p>
+						<p class="yellow-text">
+							Viaja con
+							<span>
+								<img src="assets/images/logoBlanco.png" alt="logo-blanco" class="white-logo">
+							</span>
+						</p>
+						<button type="button" class="btn btn-default botoncito">
+							REGÍSTRATE
+						</button>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<div class="col-xs-4 col-md-4 white-line">
 								__________________
-							</div>
-							<div class="col-xs-4 col-md-4">
-								<p class="white-text">O bien</p>
-							</div>
-							<div class="col-xs-4 col-md-4 white-line">
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p class="white-text">O bien</p>
+								</div>
+								<div class="col-xs-4 col-md-4 white-line">
 								__________________
+								</div>
 							</div>
 						</div>
+						<button type="button" class="btn btn-default boton-grande">
+							Conviértete en un conductor
+						</button>
 					</div>
-					<button type="button" class="btn btn-default boton-grande">Conviértete en un conductor</button>
 				</div>
 			</div>
 		</div>
@@ -73,22 +92,22 @@
 	<section class="phone">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-10 phone-container">
+				<div class="col-xs-10 col-md-10 phone-container">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-xs-6 col-md-6">
 							<img class="img-phone" src="assets/images/iPhone6Plus.png" alt="phone">
 						</div>
-						<div class="col-md-4">
+						<div class="col-xs-4 col-md-4">
 							<h2 class="app">Descarga la nueva app</h2>
-							<p class="app-text">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-							<p class="app-text">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+							<p class="app-text hidden-xs">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+							<p class="app-text hidden-xs">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
 						</div>
-						<div class="col-md-offset-2">
+						<div class="col-xs-offset-2 col-md-offset-2">
 							
 						</div>
 					</div>
 				</div>
-				<div class="col-md-offset-4">
+				<div class="col-xs-offset-4 col-md-offset-4">
 					
 				</div>
 			</div>
@@ -97,9 +116,9 @@
 	<!-- Sección conductor -->
 	<section class="driver">
 		<div class="row">
-			<div class=" col-md-offset-8 col-md-4 background-clear container-fluid">
+			<div class="col-md-offset-8 col-xs-12 col-md-4 background-clear container-fluid">
 				<div class="row">
-					<div class="col-md-offset-2 col-md-8">
+					<div class="col-md-offset-2 col-xs-12 col-md-8">
 						<h3 class="drive">Conduce cuando quieras</h3>
 						<p class="drive-text">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
 						<button type="button" class="btn btn-warning driver-button">Conviértete en conductor</button>
@@ -111,42 +130,62 @@
 	<!-- Sección del Mapa -->
 	<section class="map">
 		<div class="row prices">
-			<div class="hidden-xs col-md-offset-1 col-md-4">
-				<h3 class="price">Tarifas</h3>
-				<h4 class="price-subtitle">Consulta las tarifas LabCar aquí</h4>
-					<div class="row shapes">
-						<div class="col-md-offset-1">
+			<div class="hidden-xs col-xs-offset-1 col-md-offset-1 col-xs-4 col-md-4">
+					<h3 class="price">Tarifas</h3>
+					<h4 class="price-subtitle">Consulta las tarifas LabCar aquí</h4>
+						<div class="row shapes">
+							<div class="col-xs-offset-1 col-md-offset-1">
 							<!-- Espacio en blanco -->
+							</div>
+							<div class="col-xs-1 col-md-1">
+								<img src="assets/images/shape.png" alt="icono-ubicacion">
+							</div>
+							<div class="col-xs-10 col-md-10">
+								<input type="text" class="form-control shapes-input" placeholder="Ingrese su punto de partida">
+							</div>
 						</div>
-						<div class="col-md-1">
-							<img src="assets/images/shape.png" alt="icono-ubicacion">
-						</div>
-						<div class="col-md-10">
-							<input type="text" class="form-control shapes-input" placeholder="Ingrese su punto de partida">
-						</div>
-					</div>
-					<div class="row shapes">
-						<div class="col-md-offset-1">
+						<div class="row shapes">
+							<div class="col-xs-offset-1 col-md-offset-1">
 							<!-- Espacio en blanco -->
+							</div>
+							<div class="col-xs-1 col-md-1">
+								<img src="assets/images/shape2.png" alt="icono-destino">
+							</div>
+							<div class="col-xs-10 col-md-10">
+								<input type="text" class="form-control shapes-input" placeholder="Ingrese su destino">
+							</div>
+							<button type="button" class="btn btn-default boton-ruta">
+								¡TRAZAR RUTA!
+							</button>
 						</div>
-						<div class="col-md-1">
-							<img src="assets/images/shape2.png" alt="icono-destino">
-						</div>
-						<div class="col-md-10">
-							<input type="text" class="form-control shapes-input" placeholder="Ingrese su destino">
-						</div>
-					</div>
-			</div>
-			<div class="col-md-offset-1">
+						<div class="col-xs-offset-1 col-md-offset-1">
 							<!-- Espacio en blanco -->
-			</div>
-			<div class="col-md-4">
-				<iframe class="thumbnail" src="https://www.google.cl/maps/place/Latin+America/@-9.0647661,-113.342594,3z/data=!3m1!4b1!4m5!3m4!1s0x90f99effb40af535:0xd2673dbf02a5b69c!8m2!3d-4.4420385!4d-61.3268535?hl=es" frameborder="0" allowfullscreen>
-				</iframe>
+						</div>					
+				</div>
+					<div class="col-xs-5 col-md-5 map-container">
+							<iframe class="map-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64565970.726126164!2d-113.2229628744369!3d-8.991084194615304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90f99effb40af535%3A0xd2673dbf02a5b69c!2sLatin+America!5e0!3m2!1ses!2scl!4v1512475484054" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						<div class="col-offset-xs-2 col-offset-md-2">
+							
+						</div>
+				</div> <!-- div row prices -->
+	</section>
+	<footer>
+		<div class="row">
+			<div class="container">
+				<div class="col-xs-12 col-md-12">
+					<img class="footer-logo" src="assets/images/logoBlanco.png" alt="footer-logo">
+				</div>
 			</div>
 		</div>
-	</section>
+		<div class="row">
+			<div class="container">
+				<hr>
+			</div>
+		</div>
+	</footer>
 
+	
 
 	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
