@@ -143,4 +143,45 @@ Div transparente
 /*
 Fondo de la sección del mapa
 */
+.map {
+	background-color: #f7b617;
+	height: 43em;
+	color: #fff;
+}
 
+/*
+Alineación del texto
+*/
+.price{
+	padding-top: 40%;
+	padding-left: 3%;
+}
+
+.price-subtitle{
+	padding-left: 4%;
+}
+
+/*
+Estilos de los input
+*/
+.shapes-input{
+	color: #fff;
+	background-color: #f7b617;
+	padding: 5%;
+}
+
+.shapes {
+	padding: 3%;
+}
+
+/*
+Estilo del formulario
+*/
+.form-control::-webkit-input-placeholder { 
+	color: white;
+}
+
+.thumbnail{
+	width: 400px;
+	height: 300px;
+}
