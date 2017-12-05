@@ -210,7 +210,7 @@ Estilos del footer
 footer{
 	background-color: #2b2b2b;
 	color: #fff;
-	height: 43em;
+	height: 44em;
 }
 
 /*
@@ -218,4 +218,50 @@ Logo LabCar dentro del footer
 */
 .footer-logo {
 	margin-top: 10%;
+}
+
+/*
+Sacando el estilo de lista
+*/
+.footer-list, .footer-list2 {
+	list-style: none;
+}
+
+/*
+Sacando la decoracion de las etiquetas a
+*/
+.footer-a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5%;
+}
+
+.footer-a:hover{
+	color: #f7b617;
+}
+
+/*
+Separación de la lista del footer
+*/
+.lista{
+	padding: 5%;
+}
+
+.app-gplay {
+	margin-top: 70%;
+	padding: 5% 1%;
+}
+
+.footer-icons{
+	text-decoration: none;
+	color: #fff;
+	padding: 2%;
+}
+
+.footer-icons:hover{
+	color: #f7b617;
+}
+
+.fa {
+	margin-top: 120%;
 }
