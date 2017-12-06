@@ -1,0 +1,55 @@
+/*
+Alineacion del menu hamburguesa
+*/
+.navbar-toggle {
+	margin-right: 90%;
+}
+
+/*
+Logo LabCar
+*/
+.logo {
+	padding-left: 50%;
+}
+
+/*
+Imagen del taxi
+*/
+.taxi-container{
+	background-image: url(../assets/images/taxi.jpg);
+	background-size: cover;
+	background-position: 100% 93%;
+	background-repeat: no-repeat;
+	height: 51em;
+}
+
+
+/*
+Texto dentro del panel amarillo
+*/
+.txt-from-panel {
+	font-size: 3em;
+	padding-left: 10%;
+}
+
+/*
+Botón dentro del panel amarillo
+*/
+.taxi-button{
+	margin-left: 5%;
+	margin-top: 10%;
+	font-weight: bold;
+}
+
+/*
+Texto dentro del panel amarillo
+*/
+.travel {
+	font-size: 2em;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.mobil-app {
+	color: #fff;
+}

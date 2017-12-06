@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Mis estilos -->
 	<link rel="stylesheet" href="css/main.css">
+	<!-- css Mobile -->
+	<link rel="stylesheet" href="css/mobile.css">
 	<!-- Fuente -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<!-- Iconos -->
@@ -18,75 +20,79 @@
 <body>
 	<!-- Navbar -->
 	<div class="container-fluid">
+		<br>
 		<header>
-			<nav class="navbar navbar-default navbar-fixed-top" style="height: 100px;">
-				<div class="container">
-					<div class="navbar-header navbar-left">
-						<button type="button" class="navbar-toggle collapsed left" data-toggle="collapse" data-target="#navbar-1">
-							<span class="sr-only">Menu</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a href="#" class="navbar-brand">
-							<img src="assets/images/logoForma.png" alt="logo">
-						</a>
-					</div>
-					<div class="collapse navbar-collapse" id="navbar-1">
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="#">Viaja</a>
-							</li>
-							<li>
-								<a href="#">Conduce</a>
-							</li>
-							<li>
-								<a href="#">Inicia sesión</a>
-							</li>
-						</ul>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" >
+								<span class="sr-only">Menu</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="#" class="navbar-brand"><img class="logo" src="assets/images/logoForma.png" alt=""></a>
+						</div>
+						<div class="collapse navbar-collapse navbar-right" id="navbar-1">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">Viaja</a>
+								</li>
+								<li>
+									<a href="#">Conduce</a>
+								</li>
+								<li>
+									<a href="#">Inicia sesión</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</nav>
 		</header>
 	</div>
+
 	<!-- Primera sección -->
 	<section class="taxi img-responsive">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="container">
 					<div class="yellow col-xs-offset-4 col-xs-8 col-sm-offset-6 col-sm-6 col-md-offset-7 col-md-5">
-						<p class="yellow-p">Disfruta del viaje</p>
-						<p class="yellow-p">Eres dueño de tu tiempo</p>
-						<p class="yellow-text">
+						<p class="hidden-xs yellow-p">Disfruta del viaje</p>
+						<p class="hidden-xs yellow-p">Eres dueño de tu tiempo</p>
+						<p class="hidden-xs yellow-text">
 							Viaja con
 							<span>
 								<img src="assets/images/logoBlanco.png" alt="logo-blanco" class="white-logo">
 							</span>
 						</p>
-						<button type="button" class="btn btn-default botoncito">
+						<button type="button" class="hidden-xs btn btn-default botoncito">
 							REGÍSTRATE
 						</button>
+						<p class="visible-xs hidden-md travel">
+							Comienza a viajar
+						</p>
+						<p class="visible-xs hidden-md travel">
+							con <img class="hidden-md" src="assets/images/logoBlanco.png" alt="">
+						</p>
+						<button type="button" class="visible-xs taxi-button btn btn-default">
+								Descarga el app
+							</button>
 						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12">
-								<div class="col-xs-4 col-md-4 white-line">
-								__________________
+								<div class="hidden-xs col-md-12">
+									<p class="driver-text">O bien</p>
+									<button type="button" class="hidden-xs boton-grande btn btn-default">
+										Conviértete en un conductor
+									</button>
 								</div>
-								<div class="col-xs-4 col-md-4">
-									<p class="white-text">O bien</p>
-								</div>
-								<div class="col-xs-4 col-md-4 white-line">
-								__________________
-								</div>
-							</div>
 						</div>
-						<button type="button" class="btn btn-default boton-grande">
-							Conviértete en un conductor
-						</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	
 
 	<!-- Sección del celular -->
 	<section class="phone">
@@ -98,16 +104,20 @@
 							<img class="img-phone" src="assets/images/iPhone6Plus.png" alt="phone">
 						</div>
 						<div class="col-xs-4 col-md-4">
-							<h2 class="app">Descarga la nueva app</h2>
+							<!-- web -->
+							<h2 class=" hidden-xs app">Descarga la nueva app</h2>
+							<!-- version movil -->
+							<h2 class="visible-xs mobil-app">La nueva app</h2>
+							<!--version web  -->
 							<p class="app-text hidden-xs">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
 							<p class="app-text hidden-xs">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
 						</div>
-						<div class="col-xs-offset-2 col-md-offset-2">
+						<div class="col-md-offset-2">
 							
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-offset-4 col-md-offset-4">
+				<div class="col-md-offset-4">
 					
 				</div>
 			</div>
