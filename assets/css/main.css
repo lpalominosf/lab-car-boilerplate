@@ -1,0 +1,420 @@
+/*
+*Fuente para toda la página
+*/
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+/*
+*Estilos de la Barra de navegación
+*/
+.navbar-default{
+  background-color: #fff;
+  padding: 1%;
+  border: none;
+  color: #854e66;
+}
+
+/*
+*Logo Labcar
+*/
+.navbar-brand {
+  padding-top: 1%;
+}
+
+/*
+* Estilos de la sección del taxi
+*/
+#taxi-section{
+  background-image: url(../images/taxi.jpg);
+  background-size: cover;
+  background-position: 100% 93%;
+  background-repeat: no-repeat;
+  height: 51em;
+}
+
+/*
+*Fondo y estilos de la tipografia del 
+*cuadro amarillo
+*/
+.cuadrado-amarillo-web,
+.cuadrado-amarillo-mobile{
+  color: #fff;
+  background-color: #f7b617;
+  font-weight: bold;
+}
+
+/*
+*Cuadro amarillo versión web
+*/
+.cuadrado-amarillo-web{
+    margin-top: 12em;
+    padding: 6%;
+}
+
+/*
+*Cuadro amarillo versión mobile
+*/
+.cuadrado-amarillo-mobile {
+  padding: 5%;
+  margin-top: 5em;
+}
+
+/*
+*Lineas blancas
+*/
+.linea{
+  padding: .4em;
+  border: none;
+  border-bottom: .002em solid #fff;
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+}
+
+/*
+*Texto entre las líneas blancas
+*/
+.obien{
+  padding: 0 1em;
+  margin-top: 1%;
+}
+
+/*
+*Botoncito conviertete en un conductor
+*/
+.btn-becomeadriver{
+  margin-top: 3%;
+}
+
+/*
+*Botoncito "descarga el app"
+*/
+.btn-app {
+  margin-top: 5%;
+}
+
+/*
+*Modal login
+*/
+#login-modal{
+  padding: 2%;
+  max-width: 20em;
+  width: 100%;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  border-radius: 0.5%;
+  overflow: hidden;
+  box-shadow: 0 0.3% 0.3% rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/*
+*Título del modal
+*/
+#modal-h1{
+  text-align: center;
+  font-size: 20px;
+  color: #854e66;
+}
+
+/*
+*Estilos de los input del modal login
+*/
+#login-modal input[type=submit]{
+  width: 100%;
+  display: block;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+/*
+*Estilos de los input del modal login
+*/
+#login-modal
+input[type=text],
+input[type=password]{
+  height: 30px;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 5%;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  padding: 0 .5em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#login-modal
+input[type=text]:hover,
+input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  cursor: pointer;
+}
+
+/*
+*Botón login del modal
+*/
+.btn-login{
+  justify-content: center;
+  margin-left: 35%;
+}
+
+/*
+*Estilos de la sección del teléfono
+*/
+.phone{
+  background-color: #f7b617;
+  padding: 7%;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*
+*Imagen del teléfono
+*/
+.imgphone{
+  padding: -1%;
+}
+
+/*
+*Borde blanco
+*/
+.borde-blanco{
+  border: 1px solid #fff;
+}
+
+/*
+*Texto fuera de la caja blanca, en la versión mobile
+*/
+.outside-text{
+  background-color: #f7b617;
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/*
+*Imagen de conductor
+*/
+.driver {
+  background-image: url(../images/conduce.jpg);
+  background-size: cover;
+  background-position: 100% 80%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50em;
+}
+
+/*
+*Div transparente
+*/
+.background-clear {
+  background-color: rgba(0,0,0, 0.5);
+  height: 50em;
+}
+
+/*
+*Titulo de la seccion del conductor
+*/
+.drive{
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 50%;
+}
+
+/*
+*Texto bajo el titulo de la seccion del conductor
+*/
+.option{
+  font-size: 20px;
+  color: #fff;
+}
+
+/*
+*Botón de la sección del conductor
+*/
+.btndriver{
+  margin-top: 5%;
+}
+
+/*
+*Sección tarifas
+*/
+.prices{
+  background-color: #f7b617;
+  color: #fff;
+}
+
+.prices-p{
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20%;
+}
+
+.prices-pp{
+  font-size: 18px;
+}
+
+/*
+*Cambia el color del texto dentro de los placeholders
+*/
+::placeholder{
+  color: #fff;
+}
+
+/*
+*Estilos de los input en la seccion de tarifas
+*/
+.prices input{
+  width: 100%;
+  line-height: 30px;
+  border: 1px solid white;
+  border-radius: 5%;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+/*
+*Borde del mapa
+*/
+.map-outline {
+  height: 27em;
+  width: 100%;
+  margin: 0;
+}
+
+/*
+*Margen entre el mapa y la linea que lo cubre
+*/
+.margin-map{
+  margin: 20% 0;
+  padding: 1%;
+  border: 1px solid #fff;
+}
+
+/*
+*Estilo genérico del footer
+*/
+footer{
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+/*
+*Margin del logo dentro del footer
+*/
+.footer-logo{
+  margin-top: 10%;
+}
+
+/*
+*Banners
+*/
+.app-google{
+  padding: 1%;
+  margin: 1%;
+  margin-top: 60%;
+}
+
+/*
+*a's del footer
+*/
+.footer-section a{
+  text-decoration: none;
+  color: #fff;
+  padding: 3%
+}
+
+.footer-section a:hover{
+  color: #f7b617;
+}
+
+.footer-icons{
+  text-decoration: none;
+  color: #fff;
+  padding: 1%;
+}
+
+.footer-icons:hover{
+  color: #f7b617;
+}
+
+.mobile-icons{
+  margin-bottom: 10%;
+}
+
+.fa {
+  margin-top: 100%
+}
+
+/*
+*Modal Registrate
+*/
+#register-modal{
+  padding: 2%;
+  max-width: 30em;
+  width: 100%;
+  background-color: #dddddd;
+  margin: 0 auto;
+  border-radius: 0.5%;
+  overflow: hidden;
+  box-shadow: 0 0.3% 0.3% rgba(0. 0. 0. 0.3);
+  color: #000;
+}
+
+
+#login-modal
+input[type=password],
+input[type=email],
+input[type=number]{
+  height: 30px;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 5%;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  padding: 0 .5em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#login-modal
+input[type=text]{
+  height: 30px;
+  font-size: 18px;
+  width: 150%;
+}
+
+.acount-btn,
+.send-btn{
+  width: 100%;
+}
+
+.how-btn{
+  width: 100%;
+  height: 30px;
+}
+
+.register-modal-input::placeholder{
+  color: grey;
+}
+
+
+/* Corrección del input del primer modal*/
+.sesion-input::placeholder{
+  color: grey;
+}
+
+.how-btn,
+.send-btn{
+  margin: 2%;
+}

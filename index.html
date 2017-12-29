@@ -1,304 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>LabCar</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!-- Icono de la pestaña -->
-	<link rel="shortcut icon" href="assets/images/1557c931157ce26.jpg" type="image/png">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Mis estilos -->
-	<link rel="stylesheet" href="css/main.css">
-	<!-- css Mobile -->
-	<link rel="stylesheet" href="css/mobile.css">
-	<!-- Fuente -->
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<!-- Iconos -->
-	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>LabCar</title>
+  <!-- Linkeables -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="assets/images/ec11c8b5ce0c388cc96a95edb95cb0c5-icono-del-c-rculo-de-taxi-by-vexels.png" type="image/png">
 </head>
 <body>
-	<!-- Navbar -->
-	<div class="container-fluid">
-		<br>
-		<header>
-			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" >
-								<span class="sr-only">Menu</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a href="#" class="navbar-brand"><img class="logo" src="assets/images/logoForma.png" alt=""></a>
-						</div>
-						<div class="collapse navbar-collapse navbar-right" id="navbar-1">
-							<ul class="nav navbar-nav">
-								<li>
-									<a href="#">Viaja</a>
-								</li>
-								<li>
-									<a href="#">Conduce</a>
-								</li>
-								<li>
-									<a href="#">Inicia sesión</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</header>
-	</div>
 
-	<!-- Primera sección -->
-	<section class="taxi img-responsive">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="container">
-					<div class="yellow col-xs-offset-4 col-xs-8 col-sm-offset-6 col-sm-6 col-md-offset-7 col-md-5">
-						<p class="hidden-xs yellow-p">Disfruta del viaje</p>
-						<p class="hidden-xs yellow-p">Eres dueño de tu tiempo</p>
-						<p class="hidden-xs yellow-text">
-							Viaja con
-							<span>
-								<img src="assets/images/logoBlanco.png" alt="logo-blanco" class="white-logo">
-							</span>
-						</p>
-						<button type="button" class="hidden-xs btn btn-default botoncito">
-							REGÍSTRATE
-						</button>
-						<p class="visible-xs hidden-md travel">
-							Comienza a viajar
-						</p>
-						<p class="visible-xs hidden-md travel">
-							con <img class="hidden-md" src="assets/images/logoBlanco.png" alt="">
-						</p>
-						<button type="button" class="visible-xs taxi-button btn btn-default">
-								Descarga el app
-							</button>
-						<div class="row">
-								<div class="hidden-xs col-md-12">
-									<p class="driver-text">O bien</p>
-									<button type="button" class="hidden-xs boton-grande btn btn-default">
-										Conviértete en un conductor
-									</button>
-								</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
+<!-- Barra de navegación -->
+  <header id="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logoForma.png" alt="labcar-logo">
+          </a>
+        </div> <!-- Div container de la barra de navegación -->
+      <div class="collapse navbar-collapse" id="navbar-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#viaja">Viaja</a>
+          </li>
+          <li>
+            <a href="#conduce">Conduce</a>
+          </li>
+          <!-- Modal Inicio de Sesión -->
+          <li>
+            <a href="#" data-toggle="modal" data-target="#log-in">Inicia Sesión</a>
+          </li>
+          <!-- Display none esconde el modal y lo muestra solo al realizar click -->
+          <div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+              <div id="login-modal">
+                <h1 id="modal-h1">Iniciar Sesión</h1>
+                <br>
+                <form>
+                  <input class="sesion-input" type="email" name="User" placeholder="Username">
+                  <input class="sesion-input" type="password" name="password" placeholder="Password">
+                  <button class="btn btn-warning mt-25 btn-login">LOGIN</button>
+                </form>
+                <div class="pass-forgot">
+                  <span>Forgot Password? </span> <span><a href="#">   Click Here!</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul><!-- Fin de la lista de la barra de navegación -->
+      </div>
+    </div>
+  </nav> <!-- Cierre barra de navegación -->
+</header> <!-- Fin de la sección navbar -->
+<!-- Sección del Taxi -->
+  <section id="taxi-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-7 col-md-5 col-md-offset-7 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2 cuadrado-amarillo">
+        <!-- Cuadro amarillo versión web -->
+          <div class="cuadrado-amarillo-web hidden-sm hidden-xs">
+          <!-- mt corresponde a los espacios -->
+            <h2 class="mt-0">
+            Disfruta del viaje
+            <br>
+            Eres dueño de tu tiempo
+            </h2>
+            <h3 class="mt-25">
+            Viaja con <img src="assets/images/logoBlanco.png" alt="logo-cuadrado-amarillo">
+            </h3>
+            <button class="btn btn-default mt-25" data-toggle="modal" data-target="#register"><strong>REGISTRATE</strong></button>
+            <!-- Modal Registrate -->
+              <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                  <div id="register-modal">
+                    <button class="btn btn-default acount-btn">¿Ya tienes una cuenta?</button>
+                    <p class="text-center">O CREA UNA CUENTA NUEVA</p>
+                    <br>
+                    <form>
+                      <input class="register-modal-input" type="email" name="name" placeholder="Nombre">
+                      <input class="register-modal-input" type="email" name="lastname" placeholder="Apellido">
+                      <input class="register-modal-input" type="email" name="email" placeholder="Correo Electrónico: ejemplo@ejemplo.com">
+                      <input class="register-modal-input" type="number" name="phone" placeholder="Teléfono">
+                      <input class="register-modal-input" type="password" name="pass" placeholder="Contraseña">
+                      <input  class="register-modal-input" type="email" name="city" placeholder="(Opcional) Código de invitación">
+                      <button class="btn btn-default how-btn">¿Cómo te enteraste de nosotros?</button>
+                      <button class="btn btn-info send-btn">Enviar</button>
+                    </form>
+                  </div>
+                </div>
+            </div>
+            <div></div>
+            <div>
+              <input class="linea" type="text"> <!-- Linea -->
+              <span class="obien">o bien</span> <!-- Texto al lado de las lineas -->
+              <input class="linea" type="text"> <!-- Linea -->
+            </div>
+            <div>
+              <button class="btn btn-default mt-25 btn-becomeadriver"><strong>Conviértete en un conductor</strong></button>
+            </div>
+          </div>
+          <!-- Cuadro amarillo versión mobile -->
+          <div class="cuadrado-amarillo-mobile hidden-lg hidden-md">
+          <h2 class="mt-0">Comienza a viajar con</h2>
+          <span>
+            <img src="assets/images/logoBlanco.png" alt="logo">
+          </span>
+          <div>
+            <button class="btn btn-default mt-25 btn-app"><strong>Descarga el app</strong></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Container -->
+  </section> <!-- Fin de la sección del taxi -->
+  <!-- Sección del teléfono -->
+  <section class="container-fluid phone">
+    <div class="row">
+      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 borde-blanco">
+        <div class="row">
+          <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12 text-center">
+            <h2 class="phone-title">La nueva app</h2>
+          </div> <!-- Sección mobile -->
+          <div class="col-lg-5 col-md-5">
+            <img class="img-responsive imgphone" src="assets/images/iPhone6Plus.png" alt="phone">
+          </div>
+          <div class="col-lg-5 mt-50 col-md-5 hidden-sm hidden-xs">
+            <h2>Descarga la nueva app</h2>
+            <p class="paragraph">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+            <!-- Espacios entre los párrafos -->
+            <br>
+            <p class="paragraph">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+          </div>
+          <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+    </div>
+  </section> <!-- Fin de la sección del teléfono -->
+  <!-- Creé un div para poner fuera de la sección del teléfono y asi poner el texto que va ubicado ahí en la versión mobile -->
+    <div class="hidden-lg hidden-md col-sm-12 col-xs-12 outside-text">
+      <p>Llega a tu destino aún más rápido</p>
+    </div>
 
-	<!-- Sección del celular -->
-	<section class="phone">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-10 col-md-10 phone-container">
-					<div class="row">
-						<div class="col-xs-6 col-md-6">
-							<img class="img-phone" src="assets/images/iPhone6Plus.png" alt="phone">
-						</div>
-						<div class="col-xs-4 col-md-4">
-							<!-- web -->
-							<h2 class=" hidden-xs app">Descarga la nueva app</h2>
-							<!-- version movil -->
-							<h2 class="visible-xs mobil-app">La nueva app</h2>
-							<!--version web  -->
-							<p class="app-text hidden-xs">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-							<p class="app-text hidden-xs">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
-						</div>
-						<div class="col-md-offset-2">
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-md-offset-4">
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Sección conductor -->
-	<section class="driver">
-		<div class="row">
-			<div class="col-md-offset-8 col-xs-12 col-md-4 background-clear container-fluid">
-				<div class="row">
-					<div class="col-md-offset-2 col-xs-12 col-md-8">
-						<h3 class="drive">Conduce cuando quieras</h3>
-						<p class="drive-text">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-						<button type="button" class="btn btn-warning driver-button">Conviértete en conductor</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Sección del Mapa -->
-	<section class="map">
-		<div class="row prices">
-			<div class="hidden-xs col-xs-offset-1 col-md-offset-1 col-xs-4 col-md-4">
-					<h3 class="price">Tarifas</h3>
-					<h4 class="price-subtitle">Consulta las tarifas LabCar aquí</h4>
-						<div class="row shapes">
-							<div class="col-xs-offset-1 col-md-offset-1">
-							<!-- Espacio en blanco -->
-							</div>
-							<div class="col-xs-1 col-md-1">
-								<img src="assets/images/shape.png" alt="icono-ubicacion">
-							</div>
-							<div class="col-xs-10 col-md-10">
-								<input type="text" class="form-control shapes-input" placeholder="Ingrese su punto de partida">
-							</div>
-						</div>
-						<div class="row shapes">
-							<div class="col-xs-offset-1 col-md-offset-1">
-							<!-- Espacio en blanco -->
-							</div>
-							<div class="col-xs-1 col-md-1">
-								<img src="assets/images/shape2.png" alt="icono-destino">
-							</div>
-							<div class="col-xs-10 col-md-10">
-								<input type="text" class="form-control shapes-input" placeholder="Ingrese su destino">
-							</div>
-							<button type="button" class="btn btn-default boton-ruta">
-								¡TRAZAR RUTA!
-							</button>
-						</div>
-						<div class="col-xs-offset-1 col-md-offset-1">
-							<!-- Espacio en blanco -->
-						</div>					
-				</div>
-					<div class="col-xs-5 col-md-5 map-container">
-							<iframe class="map-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64565970.726126164!2d-113.2229628744369!3d-8.991084194615304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90f99effb40af535%3A0xd2673dbf02a5b69c!2sLatin+America!5e0!3m2!1ses!2scl!4v1512475484054" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>
-						<div class="col-offset-xs-2 col-offset-md-2">
-							
-						</div>
-				</div> <!-- div row prices -->
-	</section>
-	<footer>
-		<div class="row">
-			<div class="container">
-				<div class="col-xs-12 col-md-12">
-					<img class="footer-logo" src="assets/images/logoBlanco.png" alt="footer-logo">
-				</div>
-			</div>
-		</div>
-		<!-- Línea -->
-		<div class="row">
-			<div class="container">
-				<div class="col-xs-12 col-md-12">
-					<hr>
-				</div>
-			</div>
-		</div>
-		<!-- División de columnas -->
-	<div class="row">
-		<div class="container">
-			<div class="col-xs-4 col-md-3">
-				<a class="footer-icons" href="#">
-					<span class="fa fa-facebook" aria-hidden="true"></span>
-				</a>
-				<a class="footer-icons" href="#">
-					<span class="fa fa-twitter" aria-hidden="true"></span>
-				</a>
-				<a class="footer-icons" href="#">
-					<span class="fa fa-linkedin" aria-hidden="true"></span>
-				</a>
-				<a class="footer-icons" href="#">
-					<span class="fa fa-apple" aria-hidden="true"></span>
-				</a>
-				<a class="footer-icons" href="#">
-					<span class="fa fa-play" aria-hidden="true"></span>
-				</a>
-			</div>
-			<!-- Primera Columna de opciones en el footer -->
-			<div class="col-xs-3 col-md-3">
-				<ul class="footer-list">
-					<li class="lista">
-						<a class="footer-a" href="#">Viaja</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Conduce</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Ciudades</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Entregas</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">¿Cómo funciona?</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Países</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Seguridad</a>
-					</li>
-				</ul>
-			</div>
-			<!-- Segunda columna de opciones en el footer -->
-			<div class="hidden-xs col-md-3">
-				<ul class="footer-list2">
-					<li class="lista">
-						<a class="footer-a" href="#">Oportunidades</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Nuestra historia</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">API de LabCar</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Eventos</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Desarrolladores</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Servicios</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Laboratoria</a>
-					</li>
-					<li class="lista">
-						<a class="footer-a" href="#">Coders</a>
-					</li>
-				</ul>
-			</div>
-			<!-- Banners de App Store y Google Play Store -->
-			<div class="col-xs-4 col-md-3">
-				<img class="app-gplay" src="assets/images/appstore.png" alt="appstore">
-				<img src="assets/images/enBadgeWebGeneric.png" alt="">
-			</div>
-		</div>
-	</div>
-	<!-- Línea -->
-		<div class="row">
-			<div class="container">
-				<div class="col-xs-12 col-md-12">
-					<hr>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="container">
-				<div class="col-xs-12 col-md-12">
-					<p>Ⓒ 2017 LabCar technologies Inc.</p>
-					</div>
-			</div>
-		</div>
-</footer>
+<!-- Sección del conductor -->
+<section class="container-fluid driver">
+  <div class="row">
+    <div class="col-lg-4 col-lg-offset-8 col-md-4 col-md-offset-8 col-sm-12 col-xs-12 background-clear">
+      <p class="mt-25 drive">Conduce cuando quieras</p>
+      <p class="mt-25 option">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+      <button class="btn btn-lg btn-warning btndriver">Conviértete en un conductor</button>
+    </div>
+  </div>
+</section> <!-- Fin de la sección del conductor -->
+<!-- Sección de tarifas -->
+<!-- Tarifa -->
+  <section class="prices">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <p class="mt-50 prices-p"></p>
+          <p class="prices-pp">Colsuta las tarifas LabCar aquí</p>
+            <div class="row mt-25">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                <img src="assets/images/shape.png" alt="origen">
+              </div>
+            <div class="col-lg-10 col-md-10 col-sm-11 col-xs-11">
+                <input id="origen" type="text" placeholder="Ingrese su origen">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                <img src="assets/images/shape2.png" alt="destino">
+              </div>
+              <div class="col-lg-10 col-md-10 col-sm-11 col-xs-11">
+                <input id="destino" type="text" placeholder="Ingrese su destino">
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-lg btn-default" id="ruta">
+                <strong>¡TRAZAR RUTA!</strong>
+              </button>
+            </div>
+          <!-- Div entre el mapa y los input -->
+            <div class="text-center">
+              <div id="espacio-en-blanco"></div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <!-- Margen entre el mapa y el outline -->
+          <div class="margin-map">
+          <!-- Linea blanca que rodea al mapa -->
+            <div class="map-outline" id="map">
+              <iframe class="map-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64565970.726126164!2d-113.2229628744369!3d-8.991084194615304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90f99effb40af535%3A0xd2673dbf02a5b69c!2sLatin+America!5e0!3m2!1ses!2scl!4v1512475484054" width="540" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <!-- Fin de la sección del mapa -->
+<!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-logo row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <img src="assets/images/logoBlanco.png" alt="logo-footer">
+        </div>
+      </div>
+      <!-- Línea divisoria -->
+      <hr>
+      <div class="row footer-section">
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+          <div class="social">
+            <a class="footer-icons" href="#">
+              <span class="fa fa-facebook" aria-hidden="true"></span>
+            </a>
+            <a class="footer-icons" href="#">
+              <span class="fa fa-twitter" aria-hidden="true"></span>
+            </a>
+            <a class="footer-icons" href="#">
+              <span class="fa fa-linkedin" aria-hidden="true"></span>
+            </a>
+            <a class="footer-icons" href="#">
+              <span class="fa fa-apple" aria-hidden="true"></span>
+            </a>
+            <a class="footer-icons" href="#">
+              <span class="fa fa-play" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+        <!-- Primera hilera de opciones -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+          <div class="mt-5">
+            <a href="#">Viaja</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Conduce</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Ciudades</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Entrega</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">¿Cómo Funciona?</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Países</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Seguridad</a>
+          </div>
+        </div>
+        <!-- Segunda Hilera de Opciones -->
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+          <div class="mt-5">
+            <a href="#">Oportunidades</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Nuestra historia</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">API de LabCar</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Eventos</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Desarrolladores</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Servicios</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Laboratoria</a>
+          </div>
+          <div class="mt-25">
+            <a href="#">Coders</a>
+          </div>
+        </div>
+        <!-- Tercera Hilera de Opciones -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-center">
+          <div class="hidden-lg hidden-md">
+            <a class="mobile-icons" href="#">
+              <span class="fa fa-facebook" aria-hidden="true"></span>
+            </a>
+            <a class="mobile-icons" href="#">
+              <span class="fa fa-twitter" aria-hidden="true"></span>
+            </a>
+            <a class="mobile-icons" href="#">
+              <span class="fa fa-linkedin" aria-hidden="true"></span>
+            </a>
+            <a class="mobile-icons" href="#">
+              <span class="fa fa-apple" aria-hidden="true"></span>
+            </a>
+            <a class="mobile-icons" href="#">
+              <span class="fa fa-play" aria-hidden="true"></span>
+            </a>
+        </div>
+          <!-- Banners de App Store y Google Play Store -->
+          <div class="app-google">
+            <div>
+              <img src="assets/images/appstore.png" alt="app-store" class="img-responsive">
+            </div>
+            <div>
+              <img src="assets/images/enBadgeWebGeneric.png" alt="" class="img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Línea -->
+      <hr>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          <p>Ⓒ 2017 LabCar technologies Inc.</p>
+        </div>
+      </div>
+    </div> <!-- Container -->
+  </footer> <!-- Fin del footer -->
 
-	
 
-	<!-- Scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6lOSv0rWAmZbr8tditeWDVXU4wZAejpk&callback=initMap&libraries=places" type="text/javascript"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
+
+
+<!-- Mis comentarios al cerrar los div, son para no confundirme con los cierres de los mismos :) -->
