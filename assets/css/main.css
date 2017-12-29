@@ -404,6 +404,7 @@ input[type=text]{
   height: 30px;
 }
 
+/*Placeholders del modal*/
 .register-modal-input::placeholder{
   color: grey;
 }
@@ -417,4 +418,36 @@ input[type=text]{
 .how-btn,
 .send-btn{
   margin: 2%;
+}
+
+/*Modal "conviértete en conductor*/
+#driver-modal{
+  padding: 2%;
+  max-width: 30em;
+  width: 100%;
+  background-color: #dddddd;
+  margin: 0 auto;
+  border-radius: 0.5%;
+  overflow: hidden;
+  box-shadow: 0 0.3% 0.3% rgba(0. 0. 0. 0.3);
+  color: #000;
+}
+
+#driver-modal
+input[type=email]{
+  height: 30px;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 5%;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  padding: 0 .5em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.driver-modal-input::placeholder{
+  color: grey;
 }
